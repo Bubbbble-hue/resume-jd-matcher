@@ -14,7 +14,7 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-# 3. 核心分析函数 (完全复用你之前的逻辑)
+# 3. 核心分析函数 
 def analyze_resume(resume_text, jd_text):
     if not resume_text or not jd_text:
         return "请同时填写简历和职位描述。", "", "", ""
